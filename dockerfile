@@ -1,4 +1,5 @@
-FROM python:3.8-slim-buster
+# Change from buster (Debian 10 - EOL) to bookworm (Debian 12 - current stable)
+FROM python:3.8-slim-bookworm
 
 RUN apt update -y && apt install awscli -y
 WORKDIR /app
